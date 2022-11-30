@@ -18,6 +18,7 @@ import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegisterComponent } from './user-register/user-register.component';
 import { AddCourseComponent } from './add-course/add-course.component';
+import { AddFriendComponent } from './add-friend/add-friend.component';
 
 let myRoutes:Routes = [
   {
@@ -59,6 +60,10 @@ let myRoutes:Routes = [
   {
     path:"addCourse",
     component:AddCourseComponent
+  },
+  {
+    path:"addFriend",
+    component:AddFriendComponent
   }
 ]
 
@@ -76,7 +81,8 @@ let myRoutes:Routes = [
     AdminNavbarComponent,
     UserLoginComponent,
     UserRegisterComponent,
-    AddCourseComponent
+    AddCourseComponent,
+    AddFriendComponent
   ],
   imports: [
     BrowserModule,
