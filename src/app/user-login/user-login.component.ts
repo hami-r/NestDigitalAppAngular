@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class UserLoginComponent {
   
-  username = ""
+  employeeId = ""
   password = ""
 
   constructor(private route:Router) {}
@@ -16,8 +16,13 @@ export class UserLoginComponent {
 
   userLogin = () => {
     let data:any = {
-      "username":this.username,
+      "employeeId":this.employeeId,
       "password":this.password
+    }
+    if (this.employeeId == "1122" && this.password == "12345") {
+      alert("sucess")
+    } else {
+      alert("invalid")
     }
     console.log(data);
     
