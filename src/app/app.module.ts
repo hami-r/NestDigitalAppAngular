@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeNavbarComponent } from './home-navbar/home-navbar.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 let myRoutes:Routes = [
   {
@@ -16,6 +17,10 @@ let myRoutes:Routes = [
   {
     path:"gallery",
     component:GalleryComponent
+  },
+  {
+    path:"contact",
+    component:ContactUsComponent
   }
 ]
 
@@ -24,7 +29,8 @@ let myRoutes:Routes = [
     AppComponent,
     HomeNavbarComponent,
     HomeComponent,
-    GalleryComponent
+    GalleryComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
