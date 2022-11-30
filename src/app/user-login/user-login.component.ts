@@ -20,7 +20,7 @@ export class UserLoginComponent {
       "password":this.password
     }
     if (this.employeeId == "1122" && this.password == "12345") {
-      alert("sucess")
+      this.route.navigate(['/addCourse'])
     } else {
       alert("invalid")
     }

@@ -1,3 +1,4 @@
+import { registerLocaleData } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -14,5 +15,9 @@ export class ApiService {
 
   fetchFriend = () => {
     return this.http.get("https://dummyapifriends.herokuapp.com/view")
+  }
+
+  addCourse = (dataToSend:any) => {
+    return this.http.post("http://mylinkurcodesapp.herokuapp.com/addcourse",dataToSend)
   }
 }
