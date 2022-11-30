@@ -19,6 +19,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegisterComponent } from './user-register/user-register.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { AddFriendComponent } from './add-friend/add-friend.component';
+import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 
 let myRoutes:Routes = [
   {
@@ -82,7 +83,8 @@ let myRoutes:Routes = [
     UserLoginComponent,
     UserRegisterComponent,
     AddCourseComponent,
-    AddFriendComponent
+    AddFriendComponent,
+    UserNavbarComponent
   ],
   imports: [
     BrowserModule,
