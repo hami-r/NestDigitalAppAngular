@@ -13,6 +13,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewCourseComponent } from './view-course/view-course.component';
+import { ViewFriendComponent } from './view-friend/view-friend.component';
 
 let myRoutes:Routes = [
   {
@@ -38,6 +39,10 @@ let myRoutes:Routes = [
   {
     path:"viewCourse",
     component:ViewCourseComponent
+  },
+  {
+    path:"viewFriend",
+    component:ViewFriendComponent
   }
 ]
 
@@ -50,7 +55,8 @@ let myRoutes:Routes = [
     ContactUsComponent,
     AboutUsComponent,
     AdminLoginComponent,
-    ViewCourseComponent
+    ViewCourseComponent,
+    ViewFriendComponent
   ],
   imports: [
     BrowserModule,
