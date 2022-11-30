@@ -11,6 +11,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ViewCourseComponent } from './view-course/view-course.component';
 
 let myRoutes:Routes = [
   {
@@ -32,6 +34,10 @@ let myRoutes:Routes = [
   {
     path:"adminlogin",
     component:AdminLoginComponent
+  },
+  {
+    path:"viewCourse",
+    component:ViewCourseComponent
   }
 ]
 
@@ -43,13 +49,15 @@ let myRoutes:Routes = [
     GalleryComponent,
     ContactUsComponent,
     AboutUsComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    ViewCourseComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoutes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
