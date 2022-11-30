@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { ViewFriendComponent } from './view-friend/view-friend.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { UserLoginComponent } from './user-login/user-login.component';
 
 let myRoutes:Routes = [
   {
@@ -44,6 +45,10 @@ let myRoutes:Routes = [
   {
     path:"viewFriend",
     component:ViewFriendComponent
+  },
+  {
+    path:"userLogin",
+    component:UserLoginComponent
   }
 ]
 
@@ -58,7 +63,8 @@ let myRoutes:Routes = [
     AdminLoginComponent,
     ViewCourseComponent,
     ViewFriendComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,
